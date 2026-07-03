@@ -16,3 +16,7 @@ A cosmologia de Iorién nasce da possibilidade primordial de **Ior** e se estrut
 - [Planos de existência](planos.md)
 - [Divindades primordiais](divindades-primordiais.md)
 - [Elementos primordiais](elementos-primordiais.md)
+
+## Contexto para Agentes
+
+A cosmologia de Iorién nasce da possibilidade primordial de Ior e se estrutura pela interação em cadeia de seis divindades: Svemir (espaço), Etmir (tempo), Aether (essência), Mesele (matéria/forma) e Scrios (decadência/destruição). Essa hierarquia de causalidade divina é a base para os Planos de Existência e os Elementos Primordiais descritos nos arquivos relacionados.

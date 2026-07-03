@@ -1,6 +1,8 @@
+<!-- no-toc -->
 # Glossário
 
 ## Cosmologia
+
 - **Iorién:** nome do universo.
 - **Ior:** Divindade Primordial da Possibilidade.
 - **Svemir:** deus do Espaço, do Vazio e da Intensidade.
@@ -10,6 +12,7 @@
 - **Scrios:** divindade da Decadência e da Destruição.
 
 ## Planos
+
 - **Iweth:** Plano Elemental do Ar.
 - **Udath:** Plano Elemental da Terra.
 - **Eseth:** Plano Elemental da Água.
@@ -19,6 +22,7 @@
 - **Vaniorion:** Plano Divino.
 
 ## Elementos
+
 - **Udar:** Elemento Primordial da Terra.
 - **Iwen:** Elemento Primordial do Ar.
 - **Areif:** Elemento Primordial do Fogo.
@@ -27,6 +31,7 @@
 - **Salamander:** avatar de Areif.
 
 ## Plano Material
+
 - **Ederan:** planeta central.
 - **Auphen:** continente em foco.
 - **Pandorimei:** continente lar dos primeiros humanos.

@@ -1,3 +1,4 @@
+<!-- no-toc -->
 # Convenções de Escrita
 
 ## Idioma

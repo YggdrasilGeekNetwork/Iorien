@@ -22,12 +22,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npm install -g tiddlywiki
-      - run: node scripts/build-tiddlers.js
-      - run: tiddlywiki iorien-wiki --output iorien-wiki/output --build index
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: iorien-wiki/output
+          path: site
 
   deploy:
     needs: build

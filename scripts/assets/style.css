@@ -1,0 +1,460 @@
+:root {
+  --sidebar-width: 260px;
+  --content-max: 980px;
+  --border: #d5d0c3;
+  --muted: #6b6659;
+  --link: #0645ad;
+  --link-visited: #0b0080;
+  --bg: #fdfbf7;
+  --fg: #202122;
+  --sidebar-bg: #f6f3ea;
+  --toc-bg: #f8f6ef;
+  --surface: #ffffff;
+  --code-bg: #f0eee6;
+  --secret-border: #a83232;
+  --secret-bg: #fbeeee;
+  --secret-unlocked-bg: #fdf7ec;
+  --secret-unlocked-border: #b8860b;
+}
+
+/* Dark palette: applied automatically when the OS prefers dark (unless the user
+   picked light explicitly), and always when the user picked dark via the toggle —
+   the explicit [data-theme] choice wins over the OS preference in both directions. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --border: #4a4536;
+    --muted: #a39e8c;
+    --link: #8ab4f8;
+    --link-visited: #c58af9;
+    --bg: #1c1a16;
+    --fg: #e8e4d8;
+    --sidebar-bg: #262319;
+    --toc-bg: #262319;
+    --surface: #2a271e;
+    --code-bg: #33301f;
+    --secret-border: #d97a7a;
+    --secret-bg: #3a2323;
+    --secret-unlocked-bg: #33301f;
+    --secret-unlocked-border: #d9b25a;
+  }
+}
+
+:root[data-theme="dark"] {
+  --border: #4a4536;
+  --muted: #a39e8c;
+  --link: #8ab4f8;
+  --link-visited: #c58af9;
+  --bg: #1c1a16;
+  --fg: #e8e4d8;
+  --sidebar-bg: #262319;
+  --toc-bg: #262319;
+  --surface: #2a271e;
+  --code-bg: #33301f;
+  --secret-border: #d97a7a;
+  --secret-bg: #3a2323;
+  --secret-unlocked-bg: #33301f;
+  --secret-unlocked-border: #d9b25a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: var(--fg);
+  background: var(--bg);
+}
+
+a { color: var(--link); }
+a:visited { color: var(--link-visited); }
+a { text-decoration: underline; }
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+  align-items: flex-start;
+}
+
+.sidebar {
+  width: var(--sidebar-width);
+  flex: 0 0 var(--sidebar-width);
+  background: var(--sidebar-bg);
+  border-right: 1px solid var(--border);
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  font-size: 0.9rem;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.sidebar-header a {
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: var(--fg);
+}
+
+#theme-toggle {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--fg);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  line-height: 1;
+  padding: 0.25rem 0.45rem;
+  flex: 0 0 auto;
+}
+
+.search-box {
+  position: relative;
+  margin: 1rem 0;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 0.4rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 0.9rem;
+  background: var(--surface);
+  color: var(--fg);
+}
+
+#search-results {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  margin-top: 2px;
+  max-height: 320px;
+  overflow-y: auto;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+#search-results.open { display: block; }
+
+#search-results a {
+  display: block;
+  padding: 0.4rem 0.6rem;
+  text-decoration: none;
+  color: var(--fg);
+  border-bottom: 1px solid var(--border);
+}
+
+#search-results a:hover { background: var(--sidebar-bg); }
+
+#search-results .search-empty {
+  padding: 0.4rem 0.6rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.site-nav ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0.9rem;
+}
+
+.site-nav > ul { padding-left: 0; }
+
+.site-nav li { margin: 0.15rem 0; }
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--fg);
+}
+
+.site-nav a.active {
+  font-weight: 700;
+  color: var(--link);
+}
+
+.site-nav details summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.site-nav details summary a {
+  font-weight: 600;
+}
+
+.content {
+  flex: 1 1 auto;
+  padding: 2rem 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.content-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+  width: 100%;
+  max-width: calc(var(--content-max) + 240px);
+}
+
+article {
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: var(--content-max);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.65;
+  font-size: 1.05rem;
+}
+
+.article-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.6rem;
+}
+
+article:has(> .article-header .copy-button:hover) {
+  outline: 2px dashed var(--link);
+  outline-offset: 6px;
+  border-radius: 4px;
+}
+
+article h1 {
+  font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+article h2, article h3, article h4 {
+  font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.2rem;
+}
+
+.page-toc {
+  flex: 0 0 220px;
+  position: sticky;
+  top: 2rem;
+}
+
+.toc {
+  background: var(--toc-bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.8rem 1rem;
+  font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 0.88rem;
+}
+
+.toc-title {
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.toc ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  list-style: none;
+}
+
+.toc .toc-h3 { padding-left: 1rem; }
+
+table {
+  border-collapse: collapse;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.4rem 0.6rem;
+  text-align: left;
+}
+
+th { background: var(--toc-bg); }
+
+blockquote {
+  border-left: 3px solid var(--border);
+  margin: 1rem 0;
+  padding: 0.2rem 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+details {
+  margin: 1rem 0;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.5rem 0.8rem;
+  background: var(--surface);
+}
+
+details summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+details.copyable summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+}
+
+.copyable-content {
+  border-radius: 4px;
+  transition: background-color 0.15s ease, outline-color 0.15s ease;
+}
+
+details.copyable:has(.copy-button:hover) .copyable-content {
+  outline: 2px dashed var(--link);
+  outline-offset: 4px;
+  background: var(--toc-bg);
+}
+
+.copy-button {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--fg);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  line-height: 1;
+  padding: 0.15rem 0.4rem;
+  flex: 0 0 auto;
+}
+
+.copy-button:hover {
+  background: var(--toc-bg);
+}
+
+code {
+  background: var(--code-bg);
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+  font-size: 0.92em;
+}
+
+/* Restricted ("secret") content is always visually distinct, locked or not,
+   so it never blends into regular public prose. */
+.secret-block {
+  margin: 1.2rem 0;
+  padding: 0.8rem 1rem;
+  border: 2px dashed var(--secret-border);
+  border-radius: 6px;
+  background: var(--secret-bg);
+  font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.secret-block.secret-unlocked {
+  border-style: solid;
+  border-color: var(--secret-unlocked-border);
+  background: var(--secret-unlocked-bg);
+}
+
+.secret-block .secret-locked {
+  color: var(--secret-border);
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+.secret-block .secret-content {
+  font-family: Georgia, "Times New Roman", serif;
+  margin-top: 0.6rem;
+}
+
+.secret-block .secret-content::before {
+  content: "🔒 Conteúdo restrito";
+  display: block;
+  font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: var(--secret-unlocked-border);
+  margin-bottom: 0.4rem;
+}
+
+.unlock-box {
+  margin: 1rem 0;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.5rem 0.7rem;
+  font-size: 0.85rem;
+}
+
+.unlock-box summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#unlock-form {
+  display: flex;
+  gap: 0.3rem;
+  margin-top: 0.5rem;
+}
+
+#unlock-form input {
+  flex: 1;
+  min-width: 0;
+  padding: 0.3rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--fg);
+}
+
+#unlock-form button {
+  padding: 0.3rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--fg);
+  cursor: pointer;
+}
+
+#unlock-status {
+  margin-top: 0.4rem;
+  color: var(--muted);
+  min-height: 1.1em;
+}
+
+#forget-button {
+  margin-top: 0.4rem;
+  width: 100%;
+  padding: 0.3rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--fg);
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 800px) {
+  .layout { flex-direction: column; }
+  .sidebar {
+    width: 100%;
+    flex: none;
+    position: static;
+    height: auto;
+  }
+  .content { padding: 1.2rem; }
+  .content-row { flex-direction: column; }
+  .page-toc {
+    position: static;
+    width: 100%;
+    order: -1;
+  }
+}

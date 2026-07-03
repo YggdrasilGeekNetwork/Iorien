@@ -1,3 +1,4 @@
+<!-- no-toc -->
 # Notas de Consistência
 
 ## Areif, Arift e Arifth

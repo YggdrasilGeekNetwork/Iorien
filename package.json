@@ -1,0 +1,27 @@
+{
+  "name": "iorien",
+  "version": "1.0.0",
+  "description": "Wiki estática do lore de Iorién, gerada a partir dos arquivos markdown do repositório.",
+  "scripts": {
+    "build": "node scripts/build-wiki.js",
+    "lint": "markdownlint-cli2",
+    "lint:fix": "markdownlint-cli2 --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YggdrasilGeekNetwork/Iorien.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YggdrasilGeekNetwork/Iorien/issues"
+  },
+  "homepage": "https://github.com/YggdrasilGeekNetwork/Iorien#readme",
+  "dependencies": {
+    "markdown-it": "^14.3.0"
+  },
+  "devDependencies": {
+    "markdownlint-cli2": "^0.23.0"
+  }
+}
