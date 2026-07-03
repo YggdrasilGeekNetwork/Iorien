@@ -58,8 +58,15 @@ function findFiles(dir) {
 }
 
 const allFiles = findFiles(".");
-const mdFiles = allFiles.filter(f => f.endsWith(".md"));
 const imageFiles = allFiles.filter(f => !f.endsWith(".md"));
+// `<!-- exclude -->` opts a file out of the generated site entirely (no page, no nav
+// entry, no search-index row) — for repo docs that live alongside the lore but
+// aren't wiki content, e.g. referencias/instrucoes-gpt.md.
+const mdFiles = allFiles.filter(f => {
+  if (!f.endsWith(".md")) return false;
+  const raw = fs.readFileSync(f, "utf8");
+  return !extractPageMarkers(raw).markers.exclude;
+});
 
 // Output path mirrors the source path 1:1, README.md -> index.html for clean per-folder URLs.
 function outPathFor(file) {
@@ -73,13 +80,14 @@ function outPathFor(file) {
 // restricts the whole page to those roles (title still shows in nav/search with a
 // lock icon, only the body is encrypted); `no-toc` skips the generated sumário aside
 // (for pages like the README/reference docs where a TOC adds no value); `copyable`
-// adds a button next to the title that copies the whole page's markdown source.
-// Markers stack in any order; an unrecognized leading comment is left alone as
-// regular content.
+// adds a button next to the title that copies the whole page's markdown source;
+// `exclude` drops the file from the generated site entirely (no page, no nav entry,
+// no search-index row) — for repo docs that aren't wiki content. Markers stack in
+// any order; an unrecognized leading comment is left alone as regular content.
 function extractPageMarkers(content) {
   const trimmed = content.replace(/^﻿/, "").trimStart();
   let rest = trimmed;
-  const markers = { secretRoles: null, hideToc: false, copyable: false };
+  const markers = { secretRoles: null, hideToc: false, copyable: false, exclude: false };
   for (;;) {
     const match = rest.match(/^<!--\s*([^>]+?)\s*-->\s*\n/);
     if (!match) break;
@@ -94,6 +102,8 @@ function extractPageMarkers(content) {
       markers.hideToc = true;
     } else if (/^copyable$/i.test(inner)) {
       markers.copyable = true;
+    } else if (/^exclude$/i.test(inner)) {
+      markers.exclude = true;
     } else {
       break;
     }
