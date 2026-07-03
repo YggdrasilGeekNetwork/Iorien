@@ -1,0 +1,18 @@
+# Cosmologia
+
+A cosmologia de Iorién nasce da possibilidade primordial de **Ior** e se estrutura pela interação entre espaço, tempo, essência, forma e destruição.
+
+## Estrutura básica
+
+- **Ior** permite a possibilidade de todas as coisas.
+- **Svemir** estabelece espaço, vazio e extensão.
+- **Etmir** permite tempo, destino e mudança.
+- **Aether** sustenta essência, potencial, energia, informação e verdade.
+- **Mesele** dá forma à essência e manifesta o potencial fisicamente.
+- **Scrios** desfaz, decai e devolve os fios à Trama.
+
+## Arquivos relacionados
+
+- [Planos de existência](planos.md)
+- [Divindades primordiais](divindades-primordiais.md)
+- [Elementos primordiais](elementos-primordiais.md)
