@@ -42,3 +42,18 @@ function convert(filePath) {
 }
 
 findMarkdownFiles(".").forEach(convert);
+
+const READONLY_CONFIG = [
+  ["$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/edit", "hide"],
+  ["$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/delete-tiddler", "hide"],
+  ["$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/clone", "hide"],
+  ["$:/config/PageControlButtons/Visibility/$:/core/ui/PageControls/new-tiddler", "hide"],
+  ["$:/config/PageControlButtons/Visibility/$:/core/ui/PageControls/new-journal", "hide"],
+];
+
+for (const [title, text] of READONLY_CONFIG) {
+  fs.writeFileSync(
+    path.join(OUT_DIR, `${title.split("/").pop()}.tid`),
+    `title: ${title}\n\n${text}`
+  );
+}
