@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: 22
       - run: npm install -g tiddlywiki
-      - run: tiddlywiki iorien-wiki --output output --build index
+      - run: tiddlywiki iorien-wiki --output iorien-wiki/output --build index
       - uses: actions/upload-pages-artifact@v3
         with:
           path: iorien-wiki/output
