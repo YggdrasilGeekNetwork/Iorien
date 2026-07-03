@@ -1,28 +1,39 @@
 name: Deploy Wiki
+
 on:
-  push: { branches: [main] }
+  push:
+    branches:
+      - main
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
 concurrency:
   group: pages
   cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with: { node-version: 22 }
+        with:
+          node-version: 22
       - run: npm install -g tiddlywiki
       - run: tiddlywiki iorien-wiki --output output --build index
       - uses: actions/upload-pages-artifact@v3
-        with: { path: iorien-wiki/output }
+        with:
+          path: iorien-wiki/output
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    environment: { name: github-pages, url: ${{ steps.deployment.outputs.page_url }} }
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/deploy-pages@v4
         id: deployment
