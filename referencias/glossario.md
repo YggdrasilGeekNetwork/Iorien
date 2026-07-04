@@ -18,7 +18,7 @@
 - **Eseth:** Plano Elemental da Água.
 - **Arifth:** Plano Elemental do Fogo.
 - **Naetherion:** Plano Morto.
-- **Etherius:** Plano Etério.
+- **Etherius:** Plano Etéreo.
 - **Vaniorion:** Plano Divino.
 
 ## Elementos
@@ -26,9 +26,18 @@
 - **Udar:** Elemento Primordial da Terra.
 - **Iwen:** Elemento Primordial do Ar.
 - **Areif:** Elemento Primordial do Fogo.
+- **Naelir:** Elemento Primordial da Água.
 - **Therran:** avatar de Udar.
 - **Pneumaer:** avatar de Iwen.
 - **Salamander:** avatar de Areif.
+- **Miraleth:** avatar de Naelir.
+
+## Manifestações elementais
+
+- **O Colosso Errante:** manifestação de Udar.
+- **A Tempestade Viva:** manifestação de Iwen.
+- **O Vulcão Sempre-Fluente:** manifestação de Areif.
+- **O Espelho Gélido:** manifestação de Naelir.
 
 ## Plano Material
 
