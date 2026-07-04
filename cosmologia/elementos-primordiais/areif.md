@@ -12,17 +12,23 @@ O Fogo de Areif não conserva. Ele consome, funde, purifica, deforma, ilumina e 
 
 ## Arifth
 
+![Arifth, Plano Elemental do Fogo](imagens/areif-arifth.png)
+
 Arifth é o Plano Elemental do Fogo e morada de Areif. Deve ser compreendido como a fonte metafísica da transformação: combustão, febre, forja, erosão pelo calor, desejo e destruição criadora. Onde Arifth toca o Plano Material, processos se aceleram. Metais amolecem, paixões inflamam, decisões são tomadas cedo demais e antigas formas começam a rachar.
 
 Arifth não é apenas um inferno de chamas. É também cadinho, cratera, brasa enterrada, fuligem fértil e vidro recém-nascido do calor.
 
 ## O Vulcão Sempre-Fluente
 
+![O Vulcão Sempre-Fluente, manifestação de Areif](imagens/areif-vulcao-sempre-fluente.png)
+
 A manifestação de Areif é conhecida como **O Vulcão Sempre-Fluente**. Sua forma não deve ser entendida como uma montanha fixa, mas como uma abertura contínua pela qual o mundo se desfaz e se refaz. Lava, fumaça, vidro negro, cinzas e rios incandescentes compõem sua presença.
 
 O Vulcão Sempre-Fluente é temido porque não destrói por ódio. Ele transforma por natureza. Cidades próximas podem desaparecer sob cinzas, mas os solos que restam depois florescem com força estranha. Ferrarias sonham com seu calor. Profetas o veem como uma boca aberta no corpo de Ederan.
 
 ## Salamander
+
+![Salamander, avatar de Areif](imagens/areif-salamander.png)
 
 O avatar humanoide de Areif é **Salamander**. Costuma assumir a forma de uma mulher atlética e voluptuosa, em um vestido revelador feito de chamas, usando uma coroa em formato de halo de obsidiana, feita de vários espinhos helicoidais unidos por dois semicírculos concêntricos.
 
