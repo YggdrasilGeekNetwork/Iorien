@@ -3,9 +3,9 @@
 ## Pendências principais
 
 - [ ] Criar os outros 3 continentes de Ederan além de Auphen, Pandorimei e Vanadien.
-- [ ] Definir o Elemento Primordial da Água associado a Eseth.
+- [x] Definir o Elemento Primordial da Água associado a Eseth: Naelir.
 - [ ] Desenvolver os 8 Planos Externos: Emia, Izax, Veisea, Oderon, Io, Ekoris, Itresh e Iocheron.
-- [ ] Desenvolver Etherius, o Plano Etério.
+- [ ] Desenvolver Etherius, o Plano Etéreo.
 - [ ] Desenvolver Vaniorion, o Plano Divino.
 - [ ] Desenvolver Naetherion, o Plano Morto.
 - [ ] Definir geografia, povos e culturas de Auphen.
