@@ -12,17 +12,23 @@ A Água de Naelir não avança como impulso. Ela mede. Contorna, guarda, reflete
 
 ## Eseth
 
+![Eseth, Plano Elemental da Água](imagens/naelir-eseth.jpg)
+
 Eseth é o Plano Elemental da Água e morada de Naelir. Deve ser compreendido como a fonte metafísica da razão fluida: memória, ciclos, previsibilidade, reflexo, cálculo frio e adaptação paciente. Onde Eseth toca o Plano Material, sonhos se tornam mais nítidos, lembranças voltam com força incomum e padrões escondidos começam a aparecer.
 
 Eseth também governa o aspecto da água como espelho e arquivo. Lagos, gelo profundo, poços e neblinas podem guardar fragmentos de pensamento, imagens de possibilidades ou ecos de decisões antigas.
 
 ## O Espelho Gélido
 
+![O Espelho Gélido, manifestação de Naelir](imagens/naelir-espelho-gelido.jpg)
+
 A manifestação de Naelir é conhecida como **O Espelho Gélido**. Não é apenas uma extensão de água congelada, mas uma superfície impossível, vasta e imóvel, capaz de refletir não só o rosto de quem olha, mas memórias, sonhos e consequências prováveis.
 
 O Espelho Gélido raramente parece agir. Ele espera. Seu horror está na precisão. Aqueles que o contemplam por tempo demais podem ver não uma profecia inevitável, mas o desenho frio das escolhas que já começaram a fazer.
 
 ## Miraleth
+
+![Miraleth, avatar de Naelir](imagens/naelir-miraleth.jpg)
 
 O avatar humanoide de Naelir é **Miraleth**. Costuma assumir uma forma andrógina, alta e esguia, envolta em vestes translúcidas que parecem feitas de água congelada, névoa e fios de prata líquida. Sua pele tem tom azul-pálido e textura lisa, quase vítrea, com veios escuros sob a superfície, como correntes vistas através de gelo profundo.
 

@@ -12,17 +12,23 @@ O Ar de Iwen não calcula. Ele atravessa. Muda de direção, levanta poeira, apa
 
 ## Iweth
 
+![Iweth, Plano Elemental do Ar](imagens/iwen-iweth.jpg)
+
 Iweth é o Plano Elemental do Ar e morada de Iwen. Deve ser compreendido como a fonte metafísica do movimento instável: correntes, alturas, pressão, rarefação, som e mudança emocional. Onde Iweth toca o Plano Material, as coisas se tornam mais leves, mais voláteis e mais difíceis de conter.
 
 Em regiões marcadas por Iweth, pensamentos correm depressa demais, multidões mudam de humor como nuvens, juramentos feitos no calor de um instante podem se desfazer antes do pôr do sol.
 
 ## A Tempestade Viva
 
+![A Tempestade Viva, manifestação de Iwen](imagens/iwen-tempestade-viva.jpg)
+
 A manifestação de Iwen é conhecida como **A Tempestade Viva**. Não é uma tempestade comum, mas um organismo feito de pressão, nuvens, relâmpagos distantes e ventos cruzados. Sua passagem pode ser silenciosa por alguns batimentos e brutal no seguinte.
 
 A Tempestade Viva parece reagir ao mundo ao redor como uma criatura sensível, mas não necessariamente consciente nos termos mortais. Ela se aproxima do que a intriga, se enfurece com resistência, se dispersa quando entediada e retorna sem aviso.
 
 ## Pneumaer
+
+![Pneumaer, avatar de Iwen](imagens/iwen-pneumaer.jpg)
 
 O avatar humanoide de Iwen é **Pneumaer**. O avatar atual assume a forma de uma mulher alta e esguia, vestida com tecido fino branco e cinza que se move e se remodela em um padrão de fluxo gasoso colorido. Seus olhos são negros como breu, com íris branco-pálido sólida, brilhando nessa mesma cor pálida em fluxo.
 

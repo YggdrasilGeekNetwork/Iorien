@@ -4,7 +4,7 @@ const MarkdownIt = require("markdown-it");
 const { encryptSecret } = require("./crypto-secrets.js");
 
 const OUT_DIR = "site";
-const EXCLUDE_DIRS = new Set([".git", ".github", "node_modules", "scripts", OUT_DIR]);
+const EXCLUDE_DIRS = new Set([".git", ".github", "node_modules", "scripts", OUT_DIR, "images_temp"]);
 const IMAGE_EXT = new Set([".png", ".jpg", ".jpeg", ".gif", ".svg", ".webp"]);
 
 const md = new MarkdownIt({ html: true, linkify: true });

@@ -12,15 +12,21 @@ Por representar o aspecto físico e material, Udar está ligado à forma concret
 
 ## Udath
 
+![Udath, Plano Elemental da Terra](imagens/udar-udath.jpg)
+
 Udath é o Plano Elemental da Terra e morada de Udar. Deve ser compreendido como a fonte metafísica da solidez em Iorién: peso, estrutura, mineralidade, resistência e suporte. Onde Udath toca o Plano Material, as coisas ganham densidade. Juramentos parecem mais difíceis de quebrar, construções assentam fundo no chão e corpos lembram sua própria carne.
 
 ## O Colosso Errante
+
+![O Colosso Errante, manifestação de Udar](imagens/udar-colosso-errante.jpg)
 
 A manifestação de Udar é conhecida como **O Colosso Errante**. Não é apenas uma criatura gigantesca de pedra, mas uma paisagem em movimento: encostas que respiram devagar, ombros cobertos de musgo, passos que deslocam rios e fazem vilas inteiras silenciarem antes que o som chegue.
 
 O Colosso não caminha com pressa. Sua presença marca eras, não instantes. Para muitos povos, vê-lo no horizonte é sinal de mudança geológica, migração de minerais, nascimento de montanhas ou sepultamento de antigas ruínas.
 
 ## Therran
+
+![Therran, avatar de Udar](imagens/udar-therran.jpg)
 
 O avatar humanoide de Udar é **Therran**, o mais baixo entre os avatares elementais, de compleição musculosa. Sua pele costuma ter tom marrom-escuro, com textura rachada e rochosa que sempre deixa pequenos fragmentos para trás. Ainda assim, Therran pode mudar e controlar livremente a composição do próprio corpo para qualquer material mineral existente: areia, argila, metal, vidro e inúmeras variações de pedra.
 

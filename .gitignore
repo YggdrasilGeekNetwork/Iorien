@@ -2,3 +2,4 @@ node_modules/
 site/
 .omc/
 .DS_Store
+images_temp/
