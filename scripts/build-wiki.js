@@ -395,6 +395,7 @@ ${THEME_BOOTSTRAP}
 <script src="${rootPrefix}assets/secrets.js"></script>
 <script src="${rootPrefix}assets/copy.js"></script>
 <script src="${rootPrefix}assets/theme.js"></script>
+<script src="${rootPrefix}assets/lightbox.js"></script>
 </body>
 </html>
 `;
@@ -460,6 +461,7 @@ async function build() {
   fs.copyFileSync(path.join("scripts", "assets", "secrets.js"), path.join(OUT_DIR, "assets", "secrets.js"));
   fs.copyFileSync(path.join("scripts", "assets", "copy.js"), path.join(OUT_DIR, "assets", "copy.js"));
   fs.copyFileSync(path.join("scripts", "assets", "theme.js"), path.join(OUT_DIR, "assets", "theme.js"));
+  fs.copyFileSync(path.join("scripts", "assets", "lightbox.js"), path.join(OUT_DIR, "assets", "lightbox.js"));
 
   console.log(`Wiki gerada em ${OUT_DIR}/ (${mdFiles.length} páginas, ${imageFiles.length} imagens)`);
 }

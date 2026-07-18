@@ -241,6 +241,50 @@ article h2, article h3, article h4 {
   font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
   border-bottom: 1px solid var(--border);
   padding-bottom: 0.2rem;
+  clear: both;
+}
+
+article img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  float: left;
+  margin: 0 1.2rem 0.8rem 0;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  cursor: zoom-in;
+}
+
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 3rem;
+  cursor: zoom-out;
+}
+
+.lightbox-overlay img {
+  float: none;
+  margin: 0;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.6);
+  cursor: zoom-out;
+}
+
+@media (max-width: 500px) {
+  article img {
+    float: none;
+    max-width: 100%;
+    margin: 0 0 0.8rem;
+  }
 }
 
 .page-toc {
